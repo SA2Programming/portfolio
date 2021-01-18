@@ -1,52 +1,144 @@
-/* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body, html {
-  height: 100%
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani&display=swap');
+/**/
+
+.title {
+  font-size: 45px;
+  font-family: 'Sacramento', Arial, Helvetica, sans-serif;
+  border-right: 3rem;
+
 }
 
-.bgimg {
-  /* Background image */
-  background-image: url('wallpaper.jpg');
-  /* Full-screen */
-  height: 100%;
-  /* Center the background image */
-  background-position: center;
-  /* Scale and zoom in the image */
-  background-size: cover;
-  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
-  position: relative;
-  /* Add a white text color to all elements inside the .bgimg container */
-  color: white;
-  /* Add a font */
-  font-family: "Courier New", Courier, monospace;
-  /* Set the font-size to 25 pixels */
+
+h1 {
+  font-family: 'Rock Salt', cursive;
+}
+h2 {
+  font-family: 'rokkitt';
+  font-size: 36px;
+}
+h4 {
+  font-size: 22px;
+}
+a {
+  text-decoration: none;
+}
+.section-2 a {
+  display: inline;
+}
+.contact {
+  text-decoration: none;
+  color:rgba(0, 0, 0, 0.7);
+}
+
+.contact:hover {
+  color: #009dff;
+}
+
+p {
+  font-family: Mukta Vaani;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.gap {
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.github-logo {
+  max-width: 10%;
+}
+
+span {
+  font-family: 'rokkitt';
   font-size: 25px;
+  color:rgba(0, 0, 0, 0.7)
 }
 
-/* Position text in the top-left corner */
-.topleft {
+a {
+  color:rgba(0, 0, 0, 0.7)
+}
+
+a:active {
+  color: rgba(0, 0, 0, 0.5)
+}
+
+a:hover {
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.main-img {
+  border-radius: 8px;
+}
+
+.project-img {
+  max-width: 20%;
+}
+.projects {
+  max-width: 300px;
+}
+
+
+.nav-link {
+  font-family: rock salt;
+  font-size: 18px;
+  margin-left: 50px;
+}
+
+section {
+  padding: 10vmin 0vmin;
+}
+
+.section-2 .row .col-md-6 .pray img {
+  opacity: 0.8;
+  width: 80%;
+  border-radius: 0.2em;
+}
+
+.section-2 .row .col-md-6:last-child {
+  position: relative;
+}
+
+.section-2 .row .col-md-6 .panel {
   position: absolute;
-  top: 0;
-  left: 16px;
+  top: 7vmin;
+  left: -18vmin;
+  background: white;
+  border-radius: 3px;
+  padding: 13vmin 5vmin 20vmin 10vmin;
+  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-/* Position text in the bottom-left corner */
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
+.section-2 .row .col-md-6 .panel h1 {
+  font-weight: bold;
+  padding: 0.4em 0;
+  font-size: 2em;
 }
 
-/* Position text in the middle */
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
 
-/* Style the <hr> element */
-hr {
-  margin: auto;
-  width: 40%;
+
+
+
+
+@media only screen and (max-width: 992px ) {
+  .about {
+    display: none;
+  }
+
+
+}
+@media only screen and (max-width: 768px ) {
+  
+  .section-2 .row .col-md-6 .panel {
+    position: initial;
+    width: initial;
+    height: initial;
+  }
+  .project-img:last-child {
+    max-width: 15%;
+  }
 }
